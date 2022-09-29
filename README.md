@@ -83,14 +83,11 @@ Red Hat Quay는 조직을 만든 후에는 저장소 집합을 해당 조직에 
      - 이미지 푸시
 
        ```bash
-   $ podman push ${QUAY_REGISTRY}/devops/httpd-24:latest --tls-verify=false
-       Getting image source signatures
-       Copying blob a95a08801800 [--------------------------------------] 8.0b / 20.0KiB
-       Copying blob 80758011876c [--------------------------------------] 8.0b / 21.6MiB
-   Copying blob 36656c1dceb1 [--------------------------------------] 8.0b / 86.0MiB
-       Copying blob cf09fa03a4b3 [--------------------------------------] 8.0b / 205.7MiB
+       --- 생략 --
    Error: writing blob: initiating layer upload to /v2/devops/httpd-24/blobs/uploads/ in ${QUAY_REGISTRY}: unauthorized: access to the requested resource is not authorized
+       
        ```
+ 
      
    - `opsuser`로 Image Push : 정상적으로 Push 됨
    
@@ -110,12 +107,7 @@ Red Hat Quay는 조직을 만든 후에는 저장소 집합을 해당 조직에 
      - Image Push
      
        ```bash
-    $ podman push ${QUAY_REGISTRY}/devops/httpd-24:latest --tls-verify=false
-       Getting image source signatures
-    Copying blob a95a08801800 done
-       Copying blob 80758011876c done
-       Copying blob 36656c1dceb1 done
-       Copying blob cf09fa03a4b3 done
+       $ --- 생략 ---
        Copying config 649628158f done
        Writing manifest to image destination
        Storing signatures
