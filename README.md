@@ -80,7 +80,7 @@ Red Hat Quay는 조직을 만든 후에는 저장소 집합을 해당 조직에 
        
        ```
    
-     - 이미지 푸시
+     - 이미지 푸시 : 권한 에러 발생
        ```bash
           Error: writing blob: initiating layer upload to /v2/devops/httpd-24/blobs/uploads/ in ${QUAY_REGISTRY}: unauthorized: access to the requested resource is not authorized
        
